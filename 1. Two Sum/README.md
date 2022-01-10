@@ -1,6 +1,7 @@
 # 1.Two Sum
-
-<link rel="stylesheet" href="https://leetcode.com/problems/two-sum/">
+<a href="https://leetcode.com/problems/two-sum/solution/">https://leetcode.com/problems/two-sum/solution/</a>
+ 
+# Problem Description
 
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
@@ -34,7 +35,8 @@ Output: [0,1]
 -109 <= target <= 109
 Only one valid answer exists.
 ```
-## Java solution
+## Solution code
+#### Support Language - Java  
 ```
 class Solution {
     public static int[] twoSum(int[] nums, int target) {
