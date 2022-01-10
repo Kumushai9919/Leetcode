@@ -32,3 +32,21 @@ Output: [0,1]
 -109 <= target <= 109
 Only one valid answer exists.
 ```
+## Java solution
+```
+class Solution {
+    public static int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> nmap = new HashMap<>();
+        for(int i=0; i<nums.length; i++){
+            int complement = target-nums[i];
+            if(nmap.containsKey(complement)){
+                return new int[]{nmap.get(complement), i};
+            }
+            else{
+                nmap.put(nums[i], i);
+            }
+        }
+        return new int[]{};
+    }
+}
+```
