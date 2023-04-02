@@ -1,21 +1,28 @@
-class Solution {
+ class Solution {
     public int numberOfBeams(String[] bank) {
-        int beams = 0;
-        int prev_num = 0;
-        int current_num = 0;
-        for(int i=0;i<bank.length;i++){
-            current_num = countOnes(bank[i]);
-            beams += current_num*prev_num;
-            if(current_num != 0) prev_num = current_num;
+        int prev = 0;
+        for(int i=0; i<bank[0].length(); i++){
+            if(bank[0].charAt(i)=='1')++prev;
         }
-        return beams;
-    }
 
-    private int countOnes(String str){
-        int count = 0;
-        for(int i=0;i<str.length();i++){
-            if(str.charAt(i) == '1') count++;
+        int curr = 0;
+        int ans = 0;
+        for(int i=1; i<bank.length; i++){
+            for(int j=0; j<bank[i].length(); j++){
+                if(bank[i].charAt(j)=='1')curr++;
+            }
+            if(curr!=0){
+                ans +=prev*curr;
+                prev=curr;
+                curr=0;
+            }
         }
-        return count;
+
+        return ans;
+
+
+       
     }
 }
+
+ 
