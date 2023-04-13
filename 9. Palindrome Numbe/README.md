@@ -35,7 +35,7 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 ````
 -231 <= x <= 231 - 1
 ````
-## Solution code
+### Solution code
 #### Support Language - Java 
 ````
 class Solution {
