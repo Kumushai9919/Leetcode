@@ -2,10 +2,10 @@
 
 You are given an array of logs. Each log is a space-delimited string of words, where the first word is the identifier.
 
-There are two types of logs:
+There are two types of logs: 
 
-Letter-logs: All words (except the identifier) consist of lowercase English letters.
-Digit-logs: All words (except the identifier) consist of digits.
+##### Letter-logs: All words (except the identifier) consist of lowercase English letters.
+##### Digit-logs: All words (except the identifier) consist of digits.
 Reorder these logs so that:
 
 The letter-logs come before all digit-logs.
