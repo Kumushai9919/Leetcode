@@ -8,21 +8,21 @@ An Anagram is a word or phrase formed by rearranging the letters of a different 
  
 
 #### Example 1:
-
+````
 Input: s = "anagram", t = "nagaram"
 Output: true
-
+````
 #### Example 2:
-
+````
 Input: s = "rat", t = "car"
 Output: false
- 
+````
 
 #### Constraints:
-
+````
 1 <= s.length, t.length <= 5 * 104
 s and t consist of lowercase English letters.
-
+````
 #### Solution with explanation in Java:
 We can use several ways to solve this problem, we could use sorting but the time complexity will be unefficient but simple solution. One of the ways in order to efficient the solution is using HashMap, it will take exptra space like O(n) proportional to the number of unique characters in the string, but time complexity would be O(n) or O(s+t) that is the iteration we do once through both strings s and t and it is better than sorting.
 
